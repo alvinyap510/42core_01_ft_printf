@@ -10,12 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
 #include "libft/libft.h"
 
-int	ft_nbr_digits(int n)
+int ft_nbr_digits(int n)
 {
-	int	len;
+	int len;
 
 	len = 0;
 	if (n == 0)
@@ -33,10 +32,10 @@ int	ft_nbr_digits(int n)
 	return (len);
 }
 
-int	ft_print_nbr(int n)
+int ft_print_nbr(int n)
 {
-	int		count;
-	char	*num;
+	int count;
+	char *num;
 
 	count = 0;
 	num = ft_itoa(n);
@@ -45,9 +44,9 @@ int	ft_print_nbr(int n)
 	return (count);
 }
 
-int	ft_uint_digits(unsigned int n)
+int ft_uint_digits(unsigned int n)
 {
-	int	len;
+	int len;
 
 	len = 0;
 	if (n == 0)
@@ -60,11 +59,11 @@ int	ft_uint_digits(unsigned int n)
 	return (len);
 }
 
-int	ft_print_uint(unsigned int n)
+int ft_print_uint(unsigned int n)
 {
-	char	*uint_str;
-	int		len;
-	int		count;
+	char *uint_str;
+	int len;
+	int count;
 
 	if (n == 0)
 	{
